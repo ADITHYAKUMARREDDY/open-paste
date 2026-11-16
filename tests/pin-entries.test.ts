@@ -16,7 +16,7 @@ const item = {
 } as ClipView
 
 describe('pinEntries', () => {
-	it('gives same-named pinboards distinct menu ids so React keys stay unique', () => {
+	it('uses pinboard ids when two boards share a name', () => {
 		const boards: Pinboard[] = [
 			{ id: 'board-a', name: 'Work', color: '#f00', createdAt: 1 },
 			{ id: 'board-b', name: 'Work', color: '#0f0', createdAt: 2 }

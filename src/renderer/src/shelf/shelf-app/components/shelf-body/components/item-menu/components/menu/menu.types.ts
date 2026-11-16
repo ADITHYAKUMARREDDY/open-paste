@@ -2,7 +2,6 @@ import type { IconName } from '@renderer/components/icon'
 
 export type MenuEntry =
 	| {
-			/** Stable identity when labels can collide (e.g. same-named pinboards). */
 			id?: string
 			label: string
 			icon?: IconName
